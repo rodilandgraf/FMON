@@ -1,0 +1,1163 @@
+�m
+[0;32mI (39) b�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 23 2025 08:44:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00113000[0m
+[0;32mI (92) boot:  3 spiffs           Unknown data     01 82 00123000 00019000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2826ch (164460) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00038294 vaddr=3ffb0000 size=06bech ( 27628) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0003ee88 vaddr=40080000 size=01190h (  4496) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=bfa50h (784976) map[0m
+[0;32mI (454) esp_image: segment 4: paddr=000ffa78 vaddr=40081190 size=17854h ( 96340) load[0m
+[0;32mI (505) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (505) boot: Disabling RNG early entropy source...[0m
+[0;32mI (517) cpu_start: Multicore app[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (526) app_init: Application information:[0m
+[0;32mI (529) app_init: Project name:     camera_3[0m
+[0;32mI (534) app_init: App version:      1[0m
+[0;32mI (538) app_init: Compile time:     May  3 2025 21:18:21[0m
+[0;32mI (544) app_init: ELF file SHA256:  4f78de590...[0m
+[0;32mI (549) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (554) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (559) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (564) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (569) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (576) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (582) heap_init: At 3FFC8848 len 000177B8 (93 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 400989E4 len 0000761C (29 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (612) spi_flash: flash io: dio[0m
+[0;33mW (615) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (629) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (640) main_task: Started on CPU0[0m
+[0;32mI (650) main_task: Calling app_main()[0m
+[0;32mI (680) wifi:wifi driver task: 3ffd0920, prio:23, stack:6656, core=0[0m
+[0;32mI (690) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (690) wifi:wifi certification version: v7.0[0m
+[0;32mI (690) wifi:config NVS flash: enabled[0m
+[0;32mI (690) wifi:config nano formating: disabled[0m
+[0;32mI (690) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (700) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (700) wifi:Init management short buffer num: 32[0m
+[0;32mI (710) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (710) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (720) wifi:Init static rx buffer num: 10[0m
+[0;32mI (720) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (720) wifi_init: rx ba win: 6[0m
+[0;32mI (730) wifi_init: accept mbox: 6[0m
+[0;32mI (730) wifi_init: tcpip mbox: 32[0m
+[0;32mI (740) wifi_init: udp mbox: 6[0m
+[0;32mI (740) wifi_init: tcp mbox: 6[0m
+[0;32mI (740) wifi_init: tcp tx win: 5760[0m
+[0;32mI (750) wifi_init: tcp rx win: 5760[0m
+[0;32mI (750) wifi_init: tcp mss: 1440[0m
+[0;32mI (760) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (760) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (770) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (770) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (860) wifi:mode : sta (a0:b7:65:50:83:28)[0m
+[0;32mI (860) wifi:enable tsf[0m
+[0;32mI (860) WiFi: WiFi initialization complete.[0m
+[0;32mI (870) WiFi: WiFi connecting...[0m
+[0;32mI (880) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (880) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (880) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (890) wifi:state: assoc -> init (0x6c0)[0m
+[0;32mI (900) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (900) WiFi: WiFi disconnected. Reconnecting...[0m
+[0;32mI (2860) TFLite: Modelo TFLite inicializado com sucesso.[0m
+[0;32mI (2860) SPIFFS: Inicializando SPIFFS[0m
+[0;32mI (2870) SPIFFS: Sistema de arquivos montado. Total: 86846, Usado: 2259[0m
+[0;32mI (2870) CAMERA: Iniciando MLX90640[0m
+[0;32mI (3050) CAMERA: Pronto para captura[0m
+[0;33mW (3320) WiFi: WiFi disconnected. Reconnecting...[0m
+[0;32mI (3330) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3330) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3340) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3350) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3360) wifi:connected with Intelbras, aid = 6, channel 1, 40U, bssid = 30:e1:f1:15:5b:ba[0m
+[0;32mI (3360) wifi:security: WPA2-PSK, phy: bgn, rssi: -65[0m
+[0;32mI (3370) wifi:pm start, type: 1[0m
+
+[0;32mI (3370) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3390) wifi:<ba-add>idx:0 (ifx:0, 30:e1:f1:15:5b:ba), tid:5, ssn:0, winSize:64[0m
+[0;32mI (3410) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4380) esp_netif_handlers: sta ip: 10.0.0.177, mask: 255.255.255.0, gw: 10.0.0.1[0m
+[0;32mI (4380) WiFi: WiFi connected. Got IP: 10.0.0.177[0m
+[0;32mI (19790) TFLite: Saída bruta int8 → sem fogo: 40, fogo: -128[0m
+[0;32mI (19790) TFLite: Resultado: SEM FOGO
+[0m
+[0;32mI (19790) CAMERA: Matriz de imagem em escala de cinza:[0m
+  7   0   0   0   6   1   0   0   5   0   0   0   5   0   0   0   5   0   0   0   4   0   0   0   4   0   0   0   5   0   0   0 
+  3   8   1   0   2   6   1   0   2   6   1   0   2   5   1   0   2   5   1   0   2   4   0   0   1   6   0   0   1   6   0   0 
+  7   1   0   0   6   1   0   0   5   0   0   0   5   1   0   0   4   0   0   0   4   0   0   0   4   0   0   0   5   0   0   0 
+  3   7   1   0   3   7   1   0   2   6   1   0   2   5   1   0   2   5   1   0   2   5   0   0   2   5   0   0   1   5   0   0 
+  6   0   0   0   5   0   0   0   5   1   0   0   5   0   0   0   4   0   0   0   4   0   0   0   4   0   0   0   4   0   0   0 
+  2   6   1   0   2   6   0   0   2   5   1   0   2   5   1   0   2   5   0   0   2   5   0   0   1   5   0   0   2   5   0   0 
+  5   0   0   0   5   0   0   0   5   0   0   0   5   0   0   0   4   0   0   0   4   0   0   0   4   0   0   0   5   0   0   0 
+  2   6   1   0   2   5   1   0   2   5   1   0   2   5   1   0   2   5   0   0   2   5   0   0   2   5   0   0   2   5   0   0 
+  5   0   0   0   5   0   0   0   5   0   0   0   4   0   0   0   4   0   0   0   4   0   0   0   4   0   0   0   5   0   0   0 
+  2   6   1   0   2   6   1   0   2   5   0   0   2   5   0   0   1   5   1   0   2   5   1   0   2   5   0   0   2   5   0   0 
+  5   0   0   0   5   0   0   0   5   0   0   0   4   0   0   0   4   0   0   0   5   0   0   0   4   0   0   0   4   0   0   0 
+  3   6   1   0   2   5   1   0   2   5   1   0   2   5   1   0   1   5   1   0   2   5   1   0   2   5   0   0   2   5   0   0 
+  6   0   0   0   5   0   0   0   5   0   0   0   5   0   0   0   4   0   0   0   4   0   0   0   4   0   0   0   5   0   0   0 
+  3   6   1   0   2   6   1   0   2   5   1   0   2   5   1   0   1   5   1   0   2   5   1   0   2   5   1   0   2   5   0   0 
+  6   0   0   0   5   0   0   0   5   0   0   0   5   0   0   0   4   0   0   0   5   0   0   0   4   0   0   0   5   0   0   0 
+  3   7   1   0   2   6   1   0   2   5   1   0   2   5   1   0   2   5   0   0   2   5   0   0   2   5   0   0   2   5   0   0 
+  6   0   0   0   6   0   0   0   5   0   0   0   5   0   0   0   4   0   0   0   5   0   0   0   4   0   0   0   5   0   0   0 
+  3   7   1   0   3   5   1   0   2   6   0   0   2   5   1   0   2   5   0   0   2   5   1   0   2   5   0   0   1   5   0   0 
+  6   0   0   0   5   0   0   0   5   0   0   0   5   0   0   0   5   0   0   0   5   1   0   0   4   0   0   0   5   0   0   0 
+  3   7   0   0   3   6   1   0   2   5   0   0   2   5   1   0   2   5   0   0   2   5   0   0   2   5   0   0   1   5   0   0 
+  7   0   0   0   6   0   0   0   5   0   0   0   5   0   0   0   5   1   0   0   5   0   0   0   4   0   0   0   5   0   0   0 
+  4   7   1   0   2   6   1   0   2   5   0   0   2   5   0   0   2   5   0   0   2   5   0   0   1   5   0   0   2   6   0   0 
+  7   0   0   0   6   0   0   0   6   0   0   0   5   0   0   0   5   0   0   0   5   0   0   0   4   1   0   0   5   0   0   0 
+  4   7   1   0   3   6   0   0   2   6   1   0   2   5   0   0   1   5   0   0   2   5   0   0   1   5   0   0   2   5   0   0 
+
+[0;32mI (20070) BMP: Imagem BMP criada com sucesso (1846 bytes)[0m
+[0;32mI (20090) SPIFFS: Imagem salva em: /spiffs/imagem.bmp (1846 bytes)[0m
+[0;32mI (20150) mbedtls: ssl_tls.c:4606 => handshake
+[0m
+[0;32mI (20150) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (20150) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (20150) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST
+[0m
+[0;32mI (20160) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (20170) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (20170) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO
+[0m
+[0;32mI (20180) mbedtls: ssl_client.c:919 => write client hello
+[0m
+[0;32mI (20190) mbedtls: ssl_msg.c:2783 => write handshake message
+[0m
+[0;32mI (20190) mbedtls: ssl_msg.c:2943 => write record
+[0m
+[0;32mI (20200) mbedtls: ssl_msg.c:3080 <= write record
+[0m
+[0;32mI (20200) mbedtls: ssl_msg.c:2904 <= write handshake message
+[0m
+[0;32mI (20210) mbedtls: ssl_client.c:1012 <= write client hello
+[0m
+[0;32mI (20220) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (20220) mbedtls: ssl_msg.c:2367 message length: 252, out_left: 252
+[0m
+[0;32mI (20230) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 252 (-0xffffff04)
+[0m
+[0;32mI (20240) mbedtls: ssl_msg.c:2401 <= flush output
+[0m
+[0;32mI (20240) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO
+[0m
+[0;32mI (20250) mbedtls: ssl_tls12_client.c:1195 => parse server hello
+[0m
+[0;32mI (20260) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (20260) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (20270) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (20280) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (20280) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (20290) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (20290) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (20300) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 102
+[0m
+[0;32mI (20310) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 102
+[0m
+[0;32mI (20310) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 97 (-0xffffff9f)
+[0m
+[0;32mI (20320) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (20330) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (20330) mbedtls: ssl_tls12_client.c:1447 server hello, total extension length: 21
+[0m
+[0;32mI (20340) mbedtls: ssl_tls12_client.c:1661 <= parse server hello
+[0m
+[0;32mI (20350) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (20350) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (20360) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE
+[0m
+[0;32mI (20370) mbedtls: ssl_tls.c:7962 => parse certificate
+[0m
+[0;32mI (20370) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (20380) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (20380) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (20390) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (20400) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (20400) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (20410) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (20420) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 2630
+[0m
+[0;32mI (20430) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 2630
+[0m
+[0;32mI (20430) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 2625 (-0xfffff5bf)
+[0m
+[0;32mI (20440) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (20460) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (20470) mbedtls: ssl_tls.c:8076 <= parse certificate
+[0m
+[0;32mI (20470) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (20470) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (20480) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_KEY_EXCHANGE
+[0m
+[0;32mI (20490) mbedtls: ssl_tls12_client.c:2089 => parse server key exchange
+[0m
+[0;32mI (20490) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (20500) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (20510) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (20510) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (20520) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (20530) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (20530) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (20540) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 305
+[0m
+[0;32mI (20540) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 305
+[0m
+[0;32mI (20550) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 300 (-0xfffffed4)
+[0m
+[0;32mI (20560) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (20570) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (20570) mbedtls: ssl_tls12_client.c:1805 ECDH curve: x25519
+[0m
+[0;32mI (20600) mbedtls: ssl_tls12_client.c:2459 <= parse server key exchange
+[0m
+[0;32mI (20610) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (20610) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (20610) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_REQUEST
+[0m
+[0;32mI (20620) mbedtls: ssl_tls12_client.c:2498 => parse certificate request
+[0m
+[0;32mI (20630) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (20630) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (20640) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (20650) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (20650) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (20660) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (20670) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (20670) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 9
+[0m
+[0;32mI (20680) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 9
+[0m
+[0;32mI (20680) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4 (-0xfffffffc)
+[0m
+[0;32mI (20690) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (20700) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (20700) mbedtls: ssl_tls12_client.c:2660 <= parse certificate request
+[0m
+[0;32mI (20710) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (20720) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (20720) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO_DONE
+[0m
+[0;32mI (20730) mbedtls: ssl_tls12_client.c:2671 => parse server hello done
+[0m
+[0;32mI (20740) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (20740) mbedtls: ssl_msg.c:4257 reuse previously read message
+[0m
+[0;32mI (20750) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (20750) mbedtls: ssl_tls12_client.c:2699 <= parse server hello done
+[0m
+[0;32mI (20760) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (20770) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (20770) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CERTIFICATE
+[0m
+[0;32mI (20780) mbedtls: ssl_tls.c:7557 => write certificate
+[0m
+[0;32mI (20790) mbedtls: ssl_tls.c:7568 <= skip write certificate
+[0m
+[0;32mI (20790) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (20800) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (20800) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_KEY_EXCHANGE
+[0m
+[0;32mI (20810) mbedtls: ssl_tls12_client.c:2714 => write client key exchange
+[0m
+[0;32mI (21190) mbedtls: ssl_msg.c:2783 => write handshake message
+[0m
+[0;32mI (21190) mbedtls: ssl_msg.c:2943 => write record
+[0m
+[0;32mI (21190) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21200) mbedtls: ssl_msg.c:2367 message length: 42, out_left: 42
+[0m
+[0;32mI (21210) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 42 (-0xffffffd6)
+[0m
+[0;32mI (21210) mbedtls: ssl_msg.c:2401 <= flush output
+[0m
+[0;32mI (21220) mbedtls: ssl_msg.c:3080 <= write record
+[0m
+[0;32mI (21230) mbedtls: ssl_msg.c:2904 <= write handshake message
+[0m
+[0;32mI (21230) mbedtls: ssl_tls12_client.c:3209 <= write client key exchange
+[0m
+[0;32mI (21240) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21250) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (21250) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_VERIFY
+[0m
+[0;32mI (21260) mbedtls: ssl_tls12_client.c:3257 => write certificate verify
+[0m
+[0;32mI (21270) mbedtls: ssl_tls.c:7171 => derive keys
+[0m
+[0;32mI (21270) mbedtls: ssl_tls.c:7295 => calc verify
+[0m
+[0;32mI (21280) mbedtls: ssl_tls.c:7314 <= calc verify
+[0m
+[0;32mI (21300) mbedtls: ssl_tls.c:7222 <= derive keys
+[0m
+[0;32mI (21300) mbedtls: ssl_tls12_client.c:3279 <= skip write certificate verify
+[0m
+[0;32mI (21300) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21310) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (21310) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CHANGE_CIPHER_SPEC
+[0m
+[0;32mI (21320) mbedtls: ssl_msg.c:5189 => write change cipher spec
+[0m
+[0;32mI (21330) mbedtls: ssl_msg.c:2783 => write handshake message
+[0m
+[0;32mI (21340) mbedtls: ssl_msg.c:2943 => write record
+[0m
+[0;32mI (21340) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21340) mbedtls: ssl_msg.c:2367 message length: 6, out_left: 6
+[0m
+[0;32mI (21350) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 6 (-0xfffffffa)
+[0m
+[0;32mI (21360) mbedtls: ssl_msg.c:2401 <= flush output
+[0m
+[0;32mI (21360) mbedtls: ssl_msg.c:3080 <= write record
+[0m
+[0;32mI (21370) mbedtls: ssl_msg.c:2904 <= write handshake message
+[0m
+[0;32mI (21380) mbedtls: ssl_msg.c:5202 <= write change cipher spec
+[0m
+[0;32mI (21380) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21390) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (21390) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_FINISHED
+[0m
+[0;32mI (21400) mbedtls: ssl_tls.c:8307 => write finished
+[0m
+[0;32mI (21410) mbedtls: ssl_tls.c:8141 => calc finished tls
+[0m
+[0;32mI (21420) mbedtls: ssl_tls.c:8172 <= calc finished
+[0m
+[0;32mI (21420) mbedtls: ssl_msg.c:2783 => write handshake message
+[0m
+[0;32mI (21430) mbedtls: ssl_msg.c:2943 => write record
+[0m
+[0;32mI (21430) mbedtls: ssl_msg.c:935 => encrypt buf
+[0m
+[0;32mI (21440) mbedtls: ssl_msg.c:1474 <= encrypt buf
+[0m
+[0;32mI (21440) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21450) mbedtls: ssl_msg.c:2367 message length: 45, out_left: 45
+[0m
+[0;32mI (21460) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 45 (-0xffffffd3)
+[0m
+[0;32mI (21460) mbedtls: ssl_msg.c:2401 <= flush output
+[0m
+[0;32mI (21470) mbedtls: ssl_msg.c:3080 <= write record
+[0m
+[0;32mI (21470) mbedtls: ssl_msg.c:2904 <= write handshake message
+[0m
+[0;32mI (21480) mbedtls: ssl_tls.c:8409 <= write finished
+[0m
+[0;32mI (21490) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21490) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (21500) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC
+[0m
+[0;32mI (21510) mbedtls: ssl_msg.c:5211 => parse change cipher spec
+[0m
+[0;32mI (21510) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (21520) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (21520) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (21530) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (21540) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (21540) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (21550) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (21550) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 6
+[0m
+[0;32mI (21560) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 6
+[0m
+[0;32mI (21570) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1 (-0xffffffff)
+[0m
+[0;32mI (21580) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (21580) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (21590) mbedtls: ssl_msg.c:5259 <= parse change cipher spec
+[0m
+[0;32mI (21590) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21600) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (21600) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_FINISHED
+[0m
+[0;32mI (21610) mbedtls: ssl_tls.c:8422 => parse finished
+[0m
+[0;32mI (21620) mbedtls: ssl_tls.c:8141 => calc finished tls
+[0m
+[0;32mI (21630) mbedtls: ssl_tls.c:8172 <= calc finished
+[0m
+[0;32mI (21630) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (21630) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (21640) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (21650) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (21650) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (21660) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (21670) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (21670) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 45
+[0m
+[0;32mI (21680) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 45
+[0m
+[0;32mI (21680) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 40 (-0xffffffd8)
+[0m
+[0;32mI (21690) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (21700) mbedtls: ssl_msg.c:1510 => decrypt buf
+[0m
+[0;32mI (21710) mbedtls: ssl_msg.c:2121 <= decrypt buf
+[0m
+[0;32mI (21710) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (21710) mbedtls: ssl_tls.c:8492 <= parse finished
+[0m
+[0;32mI (21720) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21730) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (21730) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_FLUSH_BUFFERS
+[0m
+[0;32mI (21740) mbedtls: ssl_tls12_client.c:3587 handshake: done
+[0m
+[0;32mI (21750) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21750) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (21760) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HANDSHAKE_WRAPUP
+[0m
+[0;32mI (21760) mbedtls: ssl_tls.c:4617 <= handshake
+[0m
+[0;32mI (21770) mbedtls: ssl_msg.c:6053 => write
+[0m
+[0;32mI (21770) mbedtls: ssl_msg.c:2943 => write record
+[0m
+[0;32mI (21780) mbedtls: ssl_msg.c:935 => encrypt buf
+[0m
+[0;32mI (21790) mbedtls: ssl_msg.c:1474 <= encrypt buf
+[0m
+[0;32mI (21790) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21800) mbedtls: ssl_msg.c:2367 message length: 177, out_left: 177
+[0m
+[0;32mI (21810) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 177 (-0xffffff4f)
+[0m
+[0;32mI (21810) mbedtls: ssl_msg.c:2401 <= flush output
+[0m
+[0;32mI (21820) mbedtls: ssl_msg.c:3080 <= write record
+[0m
+[0;32mI (21820) mbedtls: ssl_msg.c:6075 <= write
+[0m
+[0;32mI (21830) mbedtls: ssl_msg.c:6053 => write
+[0m
+[0;32mI (21830) mbedtls: ssl_msg.c:2943 => write record
+[0m
+[0;32mI (21840) mbedtls: ssl_msg.c:935 => encrypt buf
+[0m
+[0;32mI (21860) mbedtls: ssl_msg.c:1474 <= encrypt buf
+[0m
+[0;32mI (21880) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (21880) mbedtls: ssl_msg.c:2367 message length: 1875, out_left: 1875
+[0m
+[0;32mI (21890) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 1875 (-0xfffff8ad)
+[0m
+[0;32mI (21890) mbedtls: ssl_msg.c:2401 <= flush output
+[0m
+[0;32mI (21900) mbedtls: ssl_msg.c:3080 <= write record
+[0m
+[0;32mI (21900) mbedtls: ssl_msg.c:6075 <= write
+[0m
+[0;33mW (26920) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (26920) HTTP_POST: Falha ao enviar HTTP POST: ESP_ERR_HTTP_EAGAIN[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 23 2025 08:44:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00113000[0m
+[0;32mI (92) boot:  3 spiffs           Unknown data     01 82 00123000 00019000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2826ch (164460) map[0m
+[0;32mI (168) esp_image: segment 1: paddr=00038294 vaddr=3ffb0000 size=06bech ( 27628) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0003ee88 vaddr=40080000 size=01190h (  4496) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=bfa50h (784976) map[0m
+[0;32mI (454) esp_image: segment 4: paddr=000ffa78 vaddr=40081190 size=17854h ( 96340) load[0m
+[0;32mI (505) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (505) boot: Disabling RNG early entropy source...[0m
+[0;32mI (517) cpu_start: Multicore app[0m
+[0;32mI (526) cpu_start: Pro cpu start user code[0m
+[0;32mI (526) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (526) app_init: Application information:[0m
+[0;32mI (529) app_init: Project name:     camera_3[0m
+[0;32mI (534) app_init: App version:      1[0m
+[0;32mI (538) app_init: Compile time:     May  3 2025 21:18:21[0m
+[0;32mI (544) app_init: ELF file SHA256:  4f78de590...[0m
+[0;32mI (549) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (554) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (559) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (564) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (569) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (576) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (582) heap_init: At 3FFC8848 len 000177B8 (93 KiB): DRAM[0m
+[0;32mI (588) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (594) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (601) heap_init: At 400989E4 len 0000761C (29 KiB): IRAM[0m
+[0;32mI (608) spi_flash: detected chip: generic[0m
+[0;32mI (612) spi_flash: flash io: dio[0m
+[0;33mW (615) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (629) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (640) main_task: Started on CPU0[0m
+[0;32mI (650) main_task: Calling app_main()[0m
+[0;32mI (680) wifi:wifi driver task: 3ffd0920, prio:23, stack:6656, core=0[0m
+[0;32mI (690) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (690) wifi:wifi certification version: v7.0[0m
+[0;32mI (690) wifi:config NVS flash: enabled[0m
+[0;32mI (690) wifi:config nano formating: disabled[0m
+[0;32mI (690) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (700) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (700) wifi:Init management short buffer num: 32[0m
+[0;32mI (710) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (710) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (720) wifi:Init static rx buffer num: 10[0m
+[0;32mI (720) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (720) wifi_init: rx ba win: 6[0m
+[0;32mI (730) wifi_init: accept mbox: 6[0m
+[0;32mI (730) wifi_init: tcpip mbox: 32[0m
+[0;32mI (740) wifi_init: udp mbox: 6[0m
+[0;32mI (740) wifi_init: tcp mbox: 6[0m
+[0;32mI (740) wifi_init: tcp tx win: 5760[0m
+[0;32mI (750) wifi_init: tcp rx win: 5760[0m
+[0;32mI (750) wifi_init: tcp mss: 1440[0m
+[0;32mI (760) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (760) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (770) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (770) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (860) wifi:mode : sta (a0:b7:65:50:83:28)[0m
+[0;32mI (860) wifi:enable tsf[0m
+[0;32mI (870) WiFi: WiFi initialization complete.[0m
+[0;32mI (870) WiFi: WiFi connecting...[0m
+[0;32mI (970) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (980) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (980) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (980) wifi:state: assoc -> init (0x6c0)[0m
+[0;32mI (1000) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (1000) WiFi: WiFi disconnected. Reconnecting...[0m
+[0;32mI (2870) TFLite: Modelo TFLite inicializado com sucesso.[0m
+[0;32mI (2870) SPIFFS: Inicializando SPIFFS[0m
+[0;32mI (2880) SPIFFS: Sistema de arquivos montado. Total: 86846, Usado: 2259[0m
+[0;32mI (2880) CAMERA: Iniciando MLX90640[0m
+[0;32mI (3060) CAMERA: Pronto para captura[0m
+[0;33mW (3420) WiFi: WiFi disconnected. Reconnecting...[0m
+[0;32mI (3430) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3430) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3440) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3450) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3460) wifi:connected with Intelbras, aid = 6, channel 1, 40U, bssid = 30:e1:f1:15:5b:ba[0m
+[0;32mI (3460) wifi:security: WPA2-PSK, phy: bgn, rssi: -68[0m
+[0;32mI (3470) wifi:pm start, type: 1[0m
+
+[0;32mI (3470) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3490) wifi:<ba-add>idx:0 (ifx:0, 30:e1:f1:15:5b:ba), tid:5, ssn:0, winSize:64[0m
+[0;32mI (3530) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4480) esp_netif_handlers: sta ip: 10.0.0.177, mask: 255.255.255.0, gw: 10.0.0.1[0m
+[0;32mI (4480) WiFi: WiFi connected. Got IP: 10.0.0.177[0m
+[0;32mI (12070) TFLite: Saída bruta int8 → sem fogo: 40, fogo: -128[0m
+[0;32mI (12070) TFLite: Resultado: SEM FOGO
+[0m
+[0;32mI (12070) CAMERA: Matriz de imagem em escala de cinza:[0m
+  4   1   0   1   5   1   0   1   4   0   0   1   4   1   0   1   3   1   0   1   3   0   0   1   3   0   0   1   4   0   0   0 
+  0   5   0   0   0   4   0   0   0   5   0   0   0   4   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   4   0   0 
+  5   1   0   1   4   1   0   1   4   1   0   1   4   1   0   1   3   1   0   0   3   0   0   1   3   0   0   1   3   0   0   0 
+  1   6   1   0   0   4   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0 
+  8   4   2   3   4   1   0   1   3   1   0   1   4   1   0   1   3   1   0   1   3   1   0   1   3   0   0   1   3   0   0   1 
+  6  10   4   2   0   3   0   0   0   4   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0 
+ 10   7   5   3   4   0   0   1   3   0   0   1   3   0   0   1   3   1   0   1   3   1   0   1   3   0   0   1   3   1   0   1 
+  6  10   4   2   0   3   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   4   0   0   0   3   0   0   0   3   0   0 
+ 10   6   4   1   4   0   0   1   4   1   0   1   3   0   0   1   3   0   0   1   3   1   0   1   3   0   0   0   3   0   0   0 
+  6  10   1   0   0   4   0   0   0   4   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0 
+ 10   5   1   1   4   1   0   1   4   0   0   1   4   1   0   1   3   1   0   1   3   1   0   1   3   0   0   1   3   1   0   0 
+  5   9   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0 
+  9   1   0   1   4   1   0   0   3   1   0   1   4   1   0   1   3   1   0   1   3   1   0   1   3   1   0   0   3   1   0   1 
+  1   5   0   0   0   3   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   4   0   0 
+  5   1   0   1   4   1   0   1   4   0   0   1   3   1   0   1   3   1   0   1   3   1   0   1   3   1   0   1   3   1   0   1 
+  0   5   0   0   1   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0 
+  5   0   0   1   4   1   0   1   4   1   0   1   3   1   0   1   3   1   0   1   3   1   0   1   3   1   0   1   4   0   0   1 
+  0   5   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   4   0   0 
+  5   0   0   1   4   1   0   1   3   0   0   1   4   1   0   1   3   1   0   1   4   1   0   1   3   0   0   1   4   1   0   0 
+  0   5   0   0   0   4   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   4   0   0   0   3   0   0   0   3   0   0 
+  5   0   0   0   4   1   0   0   4   0   0   0   3   1   0   1   3   1   0   0   4   1   0   0   3   0   0   1   3   1   0   1 
+  1   5   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0   0   3   0   0 
+  6   0   0   0   4   0   0   1   4   0   0   0   3   1   0   1   3   0   0   1   3   1   0   0   3   1   0   0   3   1   0   1 
+  1   5   0   0   0   4   0   0   0   4   0   0   0   3   0   0   0   3   0   0   0   4   0   0   0   3   0   0   0   3   0   0 
+
+[0;32mI (12350) BMP: Imagem BMP criada com sucesso (1846 bytes)[0m
+[0;32mI (12380) SPIFFS: Imagem salva em: /spiffs/imagem.bmp (1846 bytes)[0m
+[0;32mI (12430) mbedtls: ssl_tls.c:4606 => handshake
+[0m
+[0;32mI (12430) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (12430) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (12440) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST
+[0m
+[0;32mI (12450) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (12450) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (12460) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO
+[0m
+[0;32mI (12460) mbedtls: ssl_client.c:919 => write client hello
+[0m
+[0;32mI (12480) mbedtls: ssl_msg.c:2783 => write handshake message
+[0m
+[0;32mI (12480) mbedtls: ssl_msg.c:2943 => write record
+[0m
+[0;32mI (12480) mbedtls: ssl_msg.c:3080 <= write record
+[0m
+[0;32mI (12490) mbedtls: ssl_msg.c:2904 <= write handshake message
+[0m
+[0;32mI (12490) mbedtls: ssl_client.c:1012 <= write client hello
+[0m
+[0;32mI (12500) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (12510) mbedtls: ssl_msg.c:2367 message length: 252, out_left: 252
+[0m
+[0;32mI (12520) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 252 (-0xffffff04)
+[0m
+[0;32mI (12520) mbedtls: ssl_msg.c:2401 <= flush output
+[0m
+[0;32mI (12530) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO
+[0m
+[0;32mI (12530) mbedtls: ssl_tls12_client.c:1195 => parse server hello
+[0m
+[0;32mI (12540) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (12550) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (12550) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (12560) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (12560) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (12570) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (12580) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (12580) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 102
+[0m
+[0;32mI (12590) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 102
+[0m
+[0;32mI (12600) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 97 (-0xffffff9f)
+[0m
+[0;32mI (12600) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (12610) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (12620) mbedtls: ssl_tls12_client.c:1447 server hello, total extension length: 21
+[0m
+[0;32mI (12620) mbedtls: ssl_tls12_client.c:1661 <= parse server hello
+[0m
+[0;32mI (12630) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (12640) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (12640) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE
+[0m
+[0;32mI (12650) mbedtls: ssl_tls.c:7962 => parse certificate
+[0m
+[0;32mI (12660) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (12660) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (12670) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (12670) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (12680) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (12690) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (12690) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (12700) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 2630
+[0m
+[0;32mI (12710) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 2630
+[0m
+[0;32mI (12710) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 2625 (-0xfffff5bf)
+[0m
+[0;32mI (12720) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (12750) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (12760) mbedtls: ssl_tls.c:8076 <= parse certificate
+[0m
+[0;32mI (12760) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (62) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (62) boot: compile time Apr 23 2025 08:44:43[0m
+[0;32mI (62) boot: Multicore bootloader[0m
+[0;32mI (67) boot: chip revision: v3.1[0m
+[0;32mI (70) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (75) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (80) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (84) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (89) boot.esp32: WDT reset info: PRO CPU PC=0x4008514c[0m
+[0;33mW (95) boot.esp32: WDT reset info: APP CPU PC=0x400d36ea[0m
+[0;32mI (101) boot: Enabling RNG early entropy source...[0m
+[0;32mI (107) boot: Partition Table:[0m
+[0;32mI (111) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (118) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (126) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (133) boot:  2 factory          factory app      00 00 00010000 00113000[0m
+[0;32mI (141) boot:  3 spiffs           Unknown data     01 82 00123000 00019000[0m
+[0;32mI (148) boot: End of partition table[0m
+[0;32mI (153) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2826ch (164460) map[0m
+[0;32mI (217) esp_image: segment 1: paddr=00038294 vaddr=3ffb0000 size=06bech ( 27628) load[0m
+[0;32mI (228) esp_image: segment 2: paddr=0003ee88 vaddr=40080000 size=01190h (  4496) load[0m
+[0;32mI (230) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=bfa50h (784976) map[0m
+[0;32mI (503) esp_image: segment 4: paddr=000ffa78 vaddr=40081190 size=17854h ( 96340) load[0m
+[0;32mI (554) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (554) boot: Disabling RNG early entropy source...[0m
+[0;32mI (567) cpu_start: Multicore app[0m
+[0;32mI (575) cpu_start: Pro cpu start user code[0m
+[0;32mI (575) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (575) app_init: Application information:[0m
+[0;32mI (578) app_init: Project name:     camera_3[0m
+[0;32mI (583) app_init: App version:      1[0m
+[0;32mI (587) app_init: Compile time:     May  3 2025 21:18:21[0m
+[0;32mI (593) app_init: ELF file SHA256:  4f78de590...[0m
+[0;32mI (598) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (603) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (608) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (613) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (618) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (625) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (631) heap_init: At 3FFC8848 len 000177B8 (93 KiB): DRAM[0m
+[0;32mI (637) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (644) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (650) heap_init: At 400989E4 len 0000761C (29 KiB): IRAM[0m
+[0;32mI (658) spi_flash: detected chip: generic[0m
+[0;32mI (661) spi_flash: flash io: dio[0m
+[0;33mW (665) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (678) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (689) main_task: Started on CPU0[0m
+[0;32mI (699) main_task: Calling app_main()[0m
+[0;32mI (729) wifi:wifi driver task: 3ffd0920, prio:23, stack:6656, core=0[0m
+[0;32mI (739) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (739) wifi:wifi certification version: v7.0[0m
+[0;32mI (739) wifi:config NVS flash: enabled[0m
+[0;32mI (739) wifi:config nano formating: disabled[0m
+[0;32mI (739) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (749) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (749) wifi:Init management short buffer num: 32[0m
+[0;32mI (759) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (759) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (769) wifi:Init static rx buffer num: 10[0m
+[0;32mI (769) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (769) wifi_init: rx ba win: 6[0m
+[0;32mI (779) wifi_init: accept mbox: 6[0m
+[0;32mI (779) wifi_init: tcpip mbox: 32[0m
+[0;32mI (789) wifi_init: udp mbox: 6[0m
+[0;32mI (789) wifi_init: tcp mbox: 6[0m
+[0;32mI (789) wifi_init: tcp tx win: 5760[0m
+[0;32mI (799) wifi_init: tcp rx win: 5760[0m
+[0;32mI (799) wifi_init: tcp mss: 1440[0m
+[0;32mI (809) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (809) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (819) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (819) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (909) wifi:mode : sta (a0:b7:65:50:83:28)[0m
+[0;32mI (909) wifi:enable tsf[0m
+[0;32mI (909) WiFi: WiFi initialization complete.[0m
+[0;32mI (909) WiFi: WiFi connecting...[0m
+[0;32mI (919) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (929) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (939) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (939) wifi:state: assoc -> init (0x6c0)[0m
+[0;32mI (949) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (949) WiFi: WiFi disconnected. Reconnecting...[0m
+[0;32mI (2909) TFLite: Modelo TFLite inicializado com sucesso.[0m
+[0;32mI (2909) SPIFFS: Inicializando SPIFFS[0m
+[0;32mI (2919) SPIFFS: Sistema de arquivos montado. Total: 86846, Usado: 2259[0m
+[0;32mI (2919) CAMERA: Iniciando MLX90640[0m
+[0;32mI (3099) CAMERA: Pronto para captura[0m
+[0;33mW (3369) WiFi: WiFi disconnected. Reconnecting...[0m
+[0;32mI (3379) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3379) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3389) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3399) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3409) wifi:connected with Intelbras, aid = 6, channel 1, 40U, bssid = 30:e1:f1:15:5b:ba[0m
+[0;32mI (3409) wifi:security: WPA2-PSK, phy: bgn, rssi: -68[0m
+[0;32mI (3419) wifi:pm start, type: 1[0m
+
+[0;32mI (3419) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3429) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (3449) wifi:<ba-add>idx:0 (ifx:0, 30:e1:f1:15:5b:ba), tid:5, ssn:0, winSize:64[0m
+[0;32mI (4439) esp_netif_handlers: sta ip: 10.0.0.177, mask: 255.255.255.0, gw: 10.0.0.1[0m
+[0;32mI (4439) WiFi: WiFi connected. Got IP: 10.0.0.177[0m
+[0;32mI (6109) TFLite: Saída bruta int8 → sem fogo: 40, fogo: -128[0m
+[0;32mI (6109) TFLite: Resultado: SEM FOGO
+[0m
+[0;32mI (6109) CAMERA: Matriz de imagem em escala de cinza:[0m
+  5   0   0   4   4   0   0   3   3   0   0   4   3   0   0   3   3   0   0   3   3   0   0   2   3   0   0   3   3   0   0   3 
+  0   6   2   0   0   5   2   0   0   4   2   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0 
+  5   0   0   4   3   0   0   4   3   0   0   4   3   0   0   3   3   0   0   3   3   0   0   3   2   0   0   3   3   0   0   3 
+  1   7   3   0   1   5   2   0   1   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0 
+  8   2   2   7   5   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3 
+  7  11   8   6   2   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0 
+ 10   7   6   9   5   0   0   2   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   2 
+  7  11   8   5   0   5   1   0   0   4   2   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0 
+ 10   7   5   7   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   2   0   0   3   3   0   0   3 
+  8  11   7   3   0   4   2   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0 
+ 10   6   3   4   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3 
+  7  10   4   0   0   4   2   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   3   1   0   0   4   0   0 
+  9   4   0   3   4   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3 
+  5   8   2   0   0   5   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   3   1   0 
+  7   1   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   2   3   0   0   3   3   0   0   3 
+  4   6   2   0   1   5   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0 
+  5   0   0   3   4   0   0   3   4   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3 
+  1   5   2   0   1   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   0   0 
+  4   0   0   3   4   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   3 
+  1   6   2   0   1   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   0   0   0   4   0   0   0   4   1   0 
+  5   0   0   3   3   0   0   3   4   0   0   2   3   0   0   2   3   0   0   3   3   0   0   3   3   0   0   3   3   0   0   2 
+  2   6   2   0   1   4   2   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   4   1   0   0   5   0   0 
+  6   0   0   3   4   0   0   3   3   0   0   3   4   0   0   3   3   0   0   3   3   0   0   3   3   0   0   2   3   0   0   3 
+  1   5   2   0   1   5   1   0   0   4   1   0   0   4   1   0   0   4   0   0   0   4   0   0   0   3   0   0   0   4   0   0 
+
+[0;32mI (6379) BMP: Imagem BMP criada com sucesso (1846 bytes)[0m
+[0;32mI (6409) SPIFFS: Imagem salva em: /spiffs/imagem.bmp (1846 bytes)[0m
+[0;32mI (6459) mbedtls: ssl_tls.c:4606 => handshake
+[0m
+[0;32mI (6469) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (6469) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (6469) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST
+[0m
+[0;32mI (6479) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (6479) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (6489) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO
+[0m
+[0;32mI (6499) mbedtls: ssl_client.c:919 => write client hello
+[0m
+[0;32mI (6509) mbedtls: ssl_msg.c:2783 => write handshake message
+[0m
+[0;32mI (6509) mbedtls: ssl_msg.c:2943 => write record
+[0m
+[0;32mI (6519) mbedtls: ssl_msg.c:3080 <= write record
+[0m
+[0;32mI (6519) mbedtls: ssl_msg.c:2904 <= write handshake message
+[0m
+[0;32mI (6529) mbedtls: ssl_client.c:1012 <= write client hello
+[0m
+[0;32mI (6529) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (6539) mbedtls: ssl_msg.c:2367 message length: 252, out_left: 252
+[0m
+[0;32mI (6549) mbedtls: ssl_msg.c:2374 ssl->f_send() returned 252 (-0xffffff04)
+[0m
+[0;32mI (6549) mbedtls: ssl_msg.c:2401 <= flush output
+[0m
+[0;32mI (6559) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO
+[0m
+[0;32mI (6569) mbedtls: ssl_tls12_client.c:1195 => parse server hello
+[0m
+[0;32mI (6569) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (6579) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (6579) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (6589) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (6599) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (6599) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (6609) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (6609) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 102
+[0m
+[0;32mI (6619) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 102
+[0m
+[0;32mI (6629) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 97 (-0xffffff9f)
+[0m
+[0;32mI (6639) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (6639) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (6649) mbedtls: ssl_tls12_client.c:1447 server hello, total extension length: 21
+[0m
+[0;32mI (6649) mbedtls: ssl_tls12_client.c:1661 <= parse server hello
+[0m
+[0;32mI (6659) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (6669) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (6669) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE
+[0m
+[0;32mI (6679) mbedtls: ssl_tls.c:7962 => parse certificate
+[0m
+[0;32mI (6689) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (6689) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (6699) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (6699) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (6709) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (6719) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (6719) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (6729) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 2630
+[0m
+[0;32mI (6739) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 2630
+[0m
+[0;32mI (6739) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 2625 (-0xfffff5bf)
+[0m
+[0;32mI (6749) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (6779) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (6779) mbedtls: ssl_tls.c:8076 <= parse certificate
+[0m
+[0;32mI (6789) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (6789) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (6789) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_KEY_EXCHANGE
+[0m
+[0;32mI (6799) mbedtls: ssl_tls12_client.c:2089 => parse server key exchange
+[0m
+[0;32mI (6809) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (6809) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (6819) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (6819) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (6829) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (6839) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (6839) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (6849) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 305
+[0m
+[0;32mI (6849) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 305
+[0m
+[0;32mI (6859) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 300 (-0xfffffed4)
+[0m
+[0;32mI (6869) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (6879) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (6879) mbedtls: ssl_tls12_client.c:1805 ECDH curve: x25519
+[0m
+[0;32mI (6919) mbedtls: ssl_tls12_client.c:2459 <= parse server key exchange
+[0m
+[0;32mI (6919) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (6919) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (6929) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_REQUEST
+[0m
+[0;32mI (6929) mbedtls: ssl_tls12_client.c:2498 => parse certificate request
+[0m
+[0;32mI (6939) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (6949) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (6949) mbedtls: ssl_msg.c:2295 in_left: 0, nb_want: 5
+[0m
+[0;32mI (6959) mbedtls: ssl_msg.c:2315 in_left: 0, nb_want: 5
+[0m
+[0;32mI (6969) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+[0m
+[0;32mI (6969) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (6979) mbedtls: ssl_msg.c:2155 => fetch input
+[0m
+[0;32mI (6979) mbedtls: ssl_msg.c:2295 in_left: 5, nb_want: 9
+[0m
+[0;32mI (6989) mbedtls: ssl_msg.c:2315 in_left: 5, nb_want: 9
+[0m
+[0;32mI (6999) mbedtls: ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4 (-0xfffffffc)
+[0m
+[0;32mI (6999) mbedtls: ssl_msg.c:2340 <= fetch input
+[0m
+[0;32mI (7009) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (7019) mbedtls: ssl_tls12_client.c:2660 <= parse certificate request
+[0m
+[0;32mI (7019) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (7029) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (7029) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO_DONE
+[0m
+[0;32mI (7039) mbedtls: ssl_tls12_client.c:2671 => parse server hello done
+[0m
+[0;32mI (7049) mbedtls: ssl_msg.c:4189 => read record
+[0m
+[0;32mI (7049) mbedtls: ssl_msg.c:4257 reuse previously read message
+[0m
+[0;32mI (7059) mbedtls: ssl_msg.c:4261 <= read record
+[0m
+[0;32mI (7069) mbedtls: ssl_tls12_client.c:2699 <= parse server hello done
+[0m
+[0;32mI (7069) mbedtls: ssl_msg.c:2353 => flush output
+[0m
+[0;32mI (7079) mbedtls: ssl_msg.c:2362 <= flush output
+[0m
+[0;32mI (7079) mbedtls: ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CERTIFICATE
+[0m
+[0;32mI (7089) mbedtls: ssl_tls.c:7557 => write certificate
+[0m
+[0;32mI (7099) mbedtls: ssl_tls.c:7568 <= skip write certificate
+[0m
+[0;32mI 

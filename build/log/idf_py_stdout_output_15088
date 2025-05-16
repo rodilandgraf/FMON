@@ -1,0 +1,158 @@
++j5
+[0;32mI (39) bets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 23 2025 08:44:43[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00113000[0m
+[0;32mI (92) boot:  3 spiffs           Unknown data     01 82 00123000 00019000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28824h (165924) map[0m
+[0;32mI (169) esp_image: segment 1: paddr=0003884c vaddr=3ffb0000 size=06bfch ( 27644) load[0m
+[0;32mI (179) esp_image: segment 2: paddr=0003f450 vaddr=40080000 size=00bc8h (  3016) load[0m
+[0;32mI (181) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=c09b4h (788916) map[0m
+[0;32mI (455) esp_image: segment 4: paddr=001009dc vaddr=40080bc8 size=17e1ch ( 97820) load[0m
+[0;32mI (507) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (507) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (528) cpu_start: Pro cpu start user code[0m
+[0;32mI (528) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (528) app_init: Application information:[0m
+[0;32mI (531) app_init: Project name:     camera_3[0m
+[0;32mI (536) app_init: App version:      1[0m
+[0;32mI (540) app_init: Compile time:     Apr 23 2025 09:05:19[0m
+[0;32mI (546) app_init: ELF file SHA256:  4d5941692...[0m
+[0;32mI (552) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (556) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (561) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (566) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (571) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (578) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (584) heap_init: At 3FFC8878 len 00017788 (93 KiB): DRAM[0m
+[0;32mI (590) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (597) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (603) heap_init: At 400989E4 len 0000761C (29 KiB): IRAM[0m
+[0;32mI (611) spi_flash: detected chip: generic[0m
+[0;32mI (614) spi_flash: flash io: dio[0m
+[0;33mW (618) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (631) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (643) main_task: Started on CPU0[0m
+[0;32mI (653) main_task: Calling app_main()[0m
+[0;32mI (683) wifi:wifi driver task: 3ffd09c4, prio:23, stack:6656, core=0[0m
+[0;32mI (693) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (693) wifi:wifi certification version: v7.0[0m
+[0;32mI (693) wifi:config NVS flash: enabled[0m
+[0;32mI (693) wifi:config nano formating: disabled[0m
+[0;32mI (693) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (703) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (703) wifi:Init management short buffer num: 32[0m
+[0;32mI (713) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (713) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (723) wifi:Init static rx buffer num: 10[0m
+[0;32mI (723) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (723) wifi_init: rx ba win: 6[0m
+[0;32mI (733) wifi_init: accept mbox: 6[0m
+[0;32mI (733) wifi_init: tcpip mbox: 32[0m
+[0;32mI (743) wifi_init: udp mbox: 6[0m
+[0;32mI (743) wifi_init: tcp mbox: 6[0m
+[0;32mI (743) wifi_init: tcp tx win: 5760[0m
+[0;32mI (753) wifi_init: tcp rx win: 5760[0m
+[0;32mI (753) wifi_init: tcp mss: 1440[0m
+[0;32mI (763) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (763) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (773) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (773) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (863) wifi:mode : sta (a0:b7:65:50:83:28)[0m
+[0;32mI (863) wifi:enable tsf[0m
+[0;32mI (863) WiFi: WiFi initialization complete.[0m
+[0;32mI (873) WiFi: WiFi connecting...[0m
+[0;32mI (883) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (883) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (893) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (903) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (913) wifi:state: run -> init (0x2a0)[0m
+I (923) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;33mW (923) WiFi: WiFi disconnected. Reconnecting...[0m
+[0;32mI (2863) TFLite: Modelo TFLite inicializado com sucesso.[0m
+[0;32mI (2863) SPIFFS: Inicializando SPIFFS[0m
+[0;32mI (2873) SPIFFS: Sistema de arquivos montado. Total: 86846, Usado: 2259[0m
+[0;32mI (2873) CAMERA: Iniciando MLX90640[0m
+[0;32mI (3053) CAMERA: Pronto para captura[0m
+[0;33mW (3343) WiFi: WiFi disconnected. Reconnecting...[0m
+[0;32mI (3353) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3353) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3363) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3373) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3413) wifi:connected with Batore, aid = 4, channel 6, BW20, bssid = 14:51:20:82:40:40[0m
+[0;32mI (3423) wifi:security: WPA2-PSK, phy: bgn, rssi: -9[0m
+[0;32mI (3423) wifi:pm start, type: 1[0m
+
+[0;32mI (3423) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3513) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4433) esp_netif_handlers: sta ip: 192.168.3.117, mask: 255.255.255.0, gw: 192.168.3.1[0m
+[0;32mI (4433) WiFi: WiFi connected. Got IP: 192.168.3.117[0m
+[0;32mI (9143) wifi:<ba-add>idx:0 (ifx:0, 14:51:20:82:40:40), tid:6, ssn:0, winSize:64[0m
+[0;32mI (9153) wifi:<ba-add>idx:1 (ifx:0, 14:51:20:82:40:40), tid:0, ssn:0, winSize:64[0m
+[0;32mI (446533) TFLite: Saída bruta int8 → sem fogo: 40, fogo: -128[0m
+[0;32mI (446533) TFLite: Resultado: SEM FOGO
+[0m
+[0;32mI (446533) CAMERA: Matriz de imagem em escala de cinza:[0m
+  3   3   1   0   3   3   1   0   3   3   1   0   3   3   1   0   3   3   1   0   3   3   0   0   3   3   1   0   2   3   0   0 
+  3   5   0   0   3   4   0   0   3   3   0   0   2   3   0   0   3   3   0   0   3   4   0   0   2   4   0   0   3   4   0   0 
+  3   4   1   0   3   3   1   0   3   3   1   0   2   3   1   0   3   3   1   0   3   3   1   0   2   3   1   0   3   4   0   0 
+  3   4   0   0   3   4   0   0   3   4   0   0   2   3   0   0   3   3   0   0   2   3   0   0   3   4   0   0   3   4   0   0 
+  3   3   1   0   2   3   1   0   3   3   0   0   3   3   0   0   2   3   1   0   2   4   1   0   2   3   1   0   2   3   0   0 
+  3   5   0   0   2   4   0   0   3   4   0   0   3   4   0   0   2   4   0   0   3   4   0   0   2   3   0   0   3   4   0   0 
+  3   4   1   0   2   3   1   0   2   3   1   0   3   3   1   0   2   3   1   0   3   3   1   0   2   3   1   0   3   3   1   0 
+  3   4   0   0   3   4   0   0   2   4   0   0   3   4   0   0   3   4   0   0   2   4   0   0   2   4   0   0   3   4   0   0 
+  3   4   1   0   3   3   1   0   3   3   0   0   3   4   1   0   2   4   1   0   3   3   1   0   3   3   0   0   3   4   0   0 
+  2   4   0   0   3   4   0   0   2   4   0   0   2   4   0   0   3   3   0   0   2   4   0   0   2   3   0   0   3   4   0   0 
+  3   3   1   0   2   3   1   0   3   3   1   0   2   3   1   0   3   3   1   0   3   3   1   0   2   3   1   0   2   3   0   0 
+  2   4   0   0   3   4   0   0   3   4   0   0   2   4   0   0   2   3   0   0   2   4   0   0   2   4   0   0   3   4   0   0 
+  3   3   1   0   3   3   1   0   2   3   1   0   3   3   1   0   3   3   1   0   3   3   1   0   2   3   0   0   3   3   0   0 
+  3   4   0   0   2   4   0   0   3   3   0   0   2   3   0   0   3   4   0   0   2   4   0   0   2   4   0   0   3   4   0   0 
+  3   4   1   0   3   3   1   0   3   3   1   0   2   3   1   0   2   3   1   0   3   3   0   0   2   3   1   0   2   4   0   0 
+  3   4   0   0   3   4   0   0   2   4   0   0   2   4   0   0   2   4   0   0   3   3   0   0   2   3   0   0   2   4   0   0 
+  3   3   1   0   3   3   1   0   3   3   1   0   2   3   1   0   3   3   1   0   3   3   2   0   3   3   0   0   3   3   0   0 
+  2   5   0   0   3   4   0   0   3   4   0   0   2   4   0   0   2   4   0   0   3   4   0   0   2   4   0   0   2   4   0   0 
+  3   3   0   0   3   3   1   0   3   3   1   0   3   3   1   0   2   3   1   0   3   3   1   0   3   3   1   0   3   3   0   0 
+  2   4   0   0   3   4   0   0   3   4   0   0   3   4   0   0   2   3   0   0   3   4   0   0   2   4   0   0   2   4   0   0 
+  3   4   0   0   3   3   1   0   3   3   1   0   3   3   1   0   3   3   0   0   3   3   1   0   3   3   0   0   2   3   0   0 
+  3   4   0   0   3   4   0   0   3   4   0   0   2   3   0   0   2   4   0   0   3   4   0   0   3   4   0   0   2   4   0   0 
+  3   3   1   0   3   3   0   0   3   4   1   0   2   3   0   0   2   3   1   0   3   3   1   0   3   4   0   0   3   3   0   0 
+  3   4   0   0   3   4   0   0   3   4   0   0   3   3   0   0   2   4   0   0   3   4   0   0   2   4   0   0   2   4   0   0 
+
+[0;32mI (446813) BMP: Imagem BMP criada com sucesso (1846 bytes)[0m
+[0;32mI (446843) SPIFFS: Imagem salva em: /spiffs/imagem.bmp (1846 bytes)[0m
+[0;31mE (446903) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (446903) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (446913) esp-tls: create_ssl_handle failed[0m
+[0;31mE (446913) esp-tls: Failed to open new connection[0m
+[0;31mE (446923) transport_base: Failed to open a new connection[0m
+[0;31mE (446933) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (446973) esp-tls-mbedtls: No server verification option set in esp_tls_cfg_t structure. Check esp_tls API reference[0m
+[0;31mE (446973) esp-tls-mbedtls: Failed to set client configurations, returned [0x8017] (ESP_ERR_MBEDTLS_SSL_SETUP_FAILED)[0m
+[0;31mE (446983) esp-tls: create_ssl_handle failed[0m
+[0;31mE (446993) esp-tls: Failed to open new connection[0m
+[0;31mE (446993) transport_base: Failed to open a new connection[0m
+[0;31mE (447003) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (447013) POST: Erro ao enviar imagem: ESP_ERR_HTTP_CONNECT[0m

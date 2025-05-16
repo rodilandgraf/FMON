@@ -1,0 +1,25 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM6 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b7e: panic_abort at C:/esp/esp-idf/components/esp_system/panic.c:463
+0x4008a7b9: esp_system_abort at C:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008b702: vApplicationStackOverflowHook at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+0x4008ca3b: vTaskSwitchContext at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008b80c: _frxt_dispatch at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008b7be: _frxt_int_exit at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081b7e: panic_abort at C:/esp/esp-idf/components/esp_system/panic.c:463
+0x4008a7b9: esp_system_abort at C:/esp/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008b702: vApplicationStackOverflowHook at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+0x4008ca3b: vTaskSwitchContext at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+0x4008b80c: _frxt_dispatch at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+0x4008b7be: _frxt_int_exit at C:/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0m
